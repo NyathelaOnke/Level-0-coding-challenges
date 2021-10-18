@@ -6,9 +6,13 @@ function vowelsInString(theString)
     {
         if(theString.charAt(i) == 'a' || theString.charAt(i) == 'e' || theString.charAt(i) == 'i' || theString.charAt(i) == 'o' || theString.charAt(i) == 'u')
         {
+            if(theVowels.includes(theString.charAt(i)))
+            {
+                continue;
+            }
             theVowels += theString.charAt(i) + ", "
         }
     }
     theVowels = theVowels.substr(0, theVowels.length - 2);
-    return theVowels;
+    console.log(theVowels);
 }

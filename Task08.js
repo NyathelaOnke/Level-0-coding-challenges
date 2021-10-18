@@ -5,11 +5,11 @@ function numberToTime (num)
     var minute = num % 60;
     var outputMin = "minute";
     var outputHour = "hour";
-    if (hour > 1)
+    if (hour > 1 || hour == 0)
     {
         outputHour += "s";
     }
-    if (minute > 1)
+    if (minute > 1 || minute == 0)
     {
         outputMin += "s";
     }
