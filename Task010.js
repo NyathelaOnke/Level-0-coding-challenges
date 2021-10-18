@@ -16,5 +16,5 @@ function commonCharacters (stringOne, stringTwo)
         }
     }
     stringOutput = stringOutput.substr(0, stringOutput.length - 2);
-    return "Common letters: " + stringOutput;
+    console.log("Common letters: " + stringOutput);
 }
