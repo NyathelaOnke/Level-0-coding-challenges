@@ -14,5 +14,5 @@ function vowelsInString(theString)
         }
     }
     theVowels = theVowels.substr(0, theVowels.length - 2);
-    console.log(theVowels);
+    console.log("Vowels: " + theVowels);
 }
